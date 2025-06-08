@@ -1,0 +1,44 @@
+/* Universal */
+* {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    background-color: #fdf6f0; /* soft beige-pink bg */
+}
+
+/* Main heading */
+h1 {
+    color: #c084fc; /* lavender */
+    
+}
+
+/* Inline demo uses style attribute – left untouched */
+
+/* Internal CSS demo (h3) */
+h3 {
+    color: #7dd3fc; /* sky blue */
+}
+
+/* External CSS demo (h4) */
+h4 {
+    color: #f472b6; /* pink blush */
+}
+
+/* Element selector example (h5) */
+h5 {
+    color: #f59e0b; /* amber gold */
+}
+
+/* Class selector example */
+.myclass {
+    color: #a3e635; /* soft lime */
+}
+
+/* ID selector example */
+#myid {
+    color: #fb923c; /* mellow orange */
+}
+
+/* Group selector (shared style for p and h5) */
+p, h5 {
+    color: #ec4899; /* candy pink */
+}
