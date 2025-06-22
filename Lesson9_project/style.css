@@ -1,0 +1,105 @@
+/* Universal Styling */
+* {
+    font-family: 'Georgia', serif;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #500031;
+    padding: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Glow Title */
+.glow {
+    font-size: 40px;
+    color: #c084fc;
+    text-shadow: 2px 2px 5px #d946ef;
+    margin-bottom: 20px;
+}
+
+/* Card Layouts */
+.card {
+    background-color: white;
+    padding: 30px;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+/* Text Effects */
+.overline {
+    text-decoration: overline;
+    text-transform: capitalize;
+}
+
+.strike {
+    text-decoration: line-through;
+    text-transform: uppercase;
+}
+
+.underline {
+    text-decoration: underline;
+    text-transform: lowercase;
+}
+
+.underline-overline {
+    text-decoration: underline overline;
+}
+
+/* Shadow Examples */
+.shadow-text {
+    text-shadow: 2px 2px 3px #CC5500;
+}
+
+.shadow-box {
+    box-shadow: 9px 9px 5px #301934;
+}
+
+/* Indent Example */
+.indented {
+    text-indent: 50%;
+}
+
+/* Typography Styles */
+.text1 {
+    font-size: 30px;
+    color: red;
+}
+
+.p1 {
+    color: blueviolet;
+    font-family: 'Georgia', serif;
+}
+
+/* Transform Box */
+.transform-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.box {
+    width: 150px;
+    height: 80px;
+    background-color: yellow;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.rotate {
+    transform: rotateX(180deg);
+}
