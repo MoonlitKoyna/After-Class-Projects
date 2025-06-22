@@ -1,0 +1,71 @@
+/* Universal Aesthetic Styling */
+* {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e8d8ff;
+    background-image: url('Purple\ -\ wallpaper\ -\ iphone\ -\ computer.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Container styling */
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+/* Gradient box */
+.gradient-box {
+    width: 90%;
+    max-width: 700px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    background-image: linear-gradient(to top right, #ffb3d9, #e27aff, #8c8cff, #ffffa4, #8eff8e);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gradient-box h1 {
+    font-size: 40px;
+    color: #4b0082;
+    margin-bottom: 10px;
+}
+
+.subtext {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Animated box */
+@keyframes rainbowGlow {
+    0%   { background-color: #ff8fa3; }
+    25%  { background-color: #ffe59e; }
+    50%  { background-color: #a1cfff; }
+    75%  { background-color: #baffc9; }
+    100% { background-color: #ffb3d9; }
+}
+
+.animated-box {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4b0082;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
+    animation: rainbowGlow 5s infinite;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
