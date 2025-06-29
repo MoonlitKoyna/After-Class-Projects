@@ -1,0 +1,38 @@
+body {
+  background-color: #fff0f6;
+  font-family: 'Georgia', serif;
+  padding: 2rem;
+  color: #4b2b36;
+  text-align: center;
+}
+
+h1 {
+  color: #d94f84;
+  margin-bottom: 2rem;
+}
+
+.box {
+  width: 250px;
+  background-color: #ffd3e2;
+  text-align: center;
+  margin: 2rem auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.box1 {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.box2 {
+  padding: 30px;
+  margin: 30px auto;
+  border: 4px dashed #ffafcc;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(255, 182, 193, 0.3);
+}
+
+.box2:hover {
+  transform: scale(1.05);
+}
