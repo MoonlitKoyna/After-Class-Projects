@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff0f5;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sticky Header */
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #ffc5dc;
+  padding: 20px;
+  text-align: center;
+  font-size: 26px;
+  color: white;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* The Vision Board */
+.board {
+  position: relative;
+  height: 800px;
+  margin: 40px;
+  padding: 20px;
+  background-color: #fff9fb;
+  border: 3px dashed #ff8ac9;
+  border-radius: 10px;
+}
+
+/* Base note style */
+.note {
+  width: 200px;
+  height: 130px;
+  background-color: #ffe4ec;
+  border: 2px solid #ff8ab8;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Static */
+.static-note {
+  position: static;
+  margin-bottom: 20px;
+}
+
+/* Relative */
+.relative-note {
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+
+/* Absolute */
+.absolute-note {
+  position: absolute;
+  top: 100px;
+  right: 40px;
+}
+
+/* Fixed */
+.fixed-note {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffb6d9;
+  color: white;
+}
+
+/* Sticky */
+.sticky-note {
+  position: sticky;
+  top: 80px;
+  margin-top: 400px;
+  background-color: #d6f5ff;
+}
