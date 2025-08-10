@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel Welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="one">Welcome</h1>
+    <p id="message">This is the welcome message.</p>
+
+    <h2>Pick Your Mood 🌸</h2>
+    <button onclick="setMood('happy')">Happy</button>
+    <button onclick="setMood('calm')">Calm</button>
+    <button onclick="setMood('excited')">Excited</button>
+
+    <script>
+        var text = document.getElementById("one").innerHTML;
+        alert("The first heading is " + text);
+
+        function setMood(mood) {
+            let message = document.getElementById("message");
+            if (mood === 'happy') {
+                document.body.style.backgroundColor = "#ffe4e1";
+                message.innerHTML = "Yay! You’re feeling happy today! 🌞";
+            } else if (mood === 'calm') {
+                document.body.style.backgroundColor = "#e0f7fa";
+                message.innerHTML = "Peace and calm vibes only 🌿";
+            } else if (mood === 'excited') {
+                document.body.style.backgroundColor = "#fff3b0";
+                message.innerHTML = "Woohoo! Let’s make today awesome! 🎉";
+            }
+        }
+    </script>
+</body>
+</html>
