@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carol Math Project</title>
+</head>
+<body>
+    <h2>Carol's Math Helper ✨</h2>
+    <script type="text/javascript">
+
+
+        function sumOfArguments(...args) {
+            let sum = 0;
+            for (let i = 0; i < args.length; i++) {
+                sum += args[i];
+            }
+            return sum;
+        }
+
+        document.write("Sum of (5, 10, 15): " + sumOfArguments(5, 10, 15) + "<br><br>");
+
+        let degrees = 30;
+        let radians = degrees * (Math.PI / 180);
+
+        document.write("Sine of 30°: " + Math.sin(radians) + "<br>");
+        document.write("Cosine of 30°: " + Math.cos(radians) + "<br>");
+        document.write("Tangent of 30°: " + Math.tan(radians) + "<br>");
+    </script>
+</body>
+</html>
