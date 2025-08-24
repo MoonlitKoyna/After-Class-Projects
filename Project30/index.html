@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async & Await Example</title>
+</head>
+<body>
+    <h2>Async & Await Example</h2>
+    <p id="result"></p>
+
+    <script>
+        function asyncAdd(a, b) {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve(a + b); 
+                }, 1000);
+            });
+        }
+
+        async function calculate() {
+            try {
+                let response = await asyncAdd(5, 20); 
+                display(response);
+            } catch (err) {
+                document.getElementById("result").innerHTML = "Error: " + err;
+            }
+        }
+
+        function display(some) {
+            document.getElementById("result").innerHTML = "Result: " + some;
+        }
+
+        calculate();
+    </script>
+</body>
+</html>

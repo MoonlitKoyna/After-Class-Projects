@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Map & Sort</title>
+</head>
+<body>
+
+  <h2>Array Map & Sort Example</h2>
+  <p>Original Array → Multiply each element by 5 → Then sort Ascending/Descending</p>
+
+  <p><b>Original Array:</b> <span id="original"></span></p>
+  <p><b>Mapped Array (×5):</b> <span id="mapped"></span></p>
+
+  <button onclick="ascending()">Ascending Order</button>
+  <button onclick="descending()">Descending Order</button>
+
+  <p><b>Sorted Result:</b> <span id="result"></span></p>
+
+  <script>
+    var numbers = [28, 6, 19.25, 50, 12];
+    document.getElementById("original").innerHTML = numbers;
+
+    var mappedArray = numbers.map(function(num) {
+      return num * 5;
+    });
+    document.getElementById("mapped").innerHTML = mappedArray;
+
+    function ascending() {
+    var sorted = [...mappedArray].sort(function(a, b) {
+        return a - b;
+    });
+    document.getElementById("result").innerHTML = sorted;
+    }
+
+    function descending() {
+    var sorted = [...mappedArray].sort(function(a, b) {
+        return b - a;
+    });
+    document.getElementById("result").innerHTML = sorted;
+    }
+</script>
+
+</body>
+</html>
