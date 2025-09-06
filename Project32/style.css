@@ -1,0 +1,148 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffeef8, #f3e5f5);
+  color: #333;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: #fff0f7;
+  padding: 10px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #d63384;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff69b4;
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #d63384;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #ff69b4;
+  margin-bottom: 20px;
+}
+
+.menu-container, .gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.menu-item {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 150px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #ff69b4;
+  color: white;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: #ff4da6;
+}
+
+.gallery-container img {
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+input, textarea {
+  width: 80%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  width: 50%;
+  padding: 10px;
+  background: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #ff4da6;
+}
+
+#formMessage {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.testimonial {
+  background: #fff0f7;
+  padding: 20px;
+  margin: 10px auto;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+footer {
+  background: #fff0f7;
+  padding: 20px;
+  margin-top: 50px;
+  color: #d63384;
+}
+
+footer .social a {
+  text-decoration: none;
+  color: #ff69b4;
+  margin: 0 5px;
+}

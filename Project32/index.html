@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Café</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Café </h1>
+    <p>Your cozy pastel corner for delicious treats 🍰☕</p>
+  </section>
+
+  <!-- About Us -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are Dreamy Café, serving the sweetest treats and drinks in a cozy pastel environment. Come relax, sip, and enjoy!</p>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="buttons">
+      <button onclick="filterMenu('all')">All</button>
+      <button onclick="filterMenu('drinks')">Drinks</button>
+      <button onclick="filterMenu('dessert')">Desserts</button>
+    </div>
+    <div class="menu-container">
+      <div class="menu-item drinks">Iced Latte - ₹150</div>
+      <div class="menu-item drinks">Berry Smoothie - ₹120</div>
+      <div class="menu-item dessert">Pink Cupcake - ₹80</div>
+      <div class="menu-item dessert">Cheesecake - ₹200</div>
+      <div class="menu-item drinks">Green Tea - ₹100</div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+    <img src="coffe.jpeg" alt="Cake">
+    <img src="cake.jpeg" alt="Coffee">
+    <img src="cupcake.jpeg" alt="Cupcake">
+    <img src="smoothie .jpeg" alt="Smoothie">
+    </div>
+</section>
+
+<section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+    <p>“Best pastel café I’ve ever visited! Amazing vibes and tasty treats.” – Sarah</p>
+    </div>
+    <div class="testimonial">
+    <p>“I love the cozy environment and delicious desserts!” – Ananya</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitForm(); return false;">
+      <input type="text" id="name" placeholder="Your Name">
+      <input type="email" id="email" placeholder="Your Email">
+      <textarea id="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+<footer>
+    <p>Café 2025</p>
+    <div class="social">
+    <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

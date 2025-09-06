@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup Form 🌸</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Signup Form</h1>
+
+<div class="card">
+    <form name="signupForm" onsubmit="return validateSignup()">
+    <h2>Create Account</h2>
+
+    <input type="text" name="name" placeholder="Full Name">
+    <p id="nameMsg"></p>
+
+    <input type="email" name="email" placeholder="Email">
+    <p id="emailMsg"></p>
+
+    <input type="number" name="age" min="10" max="100" placeholder="Age">
+    <p id="ageMsg"></p>
+
+    <input type="password" name="password" placeholder="Password (min 6 chars)">
+    <p id="passMsg"></p>
+
+    <input type="submit" value="Sign Up">
+    <p id="successMsg"></p>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
