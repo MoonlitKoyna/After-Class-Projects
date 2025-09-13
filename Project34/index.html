@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurant Portfolio 🍽️</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #fff9fb;
+      color: #333;
+    }
+
+    .section-title {
+      font-weight: 700;
+      color: #ff5fa2;
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .portfolio-card {
+      border: none;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .btn-outline-pink {
+      border: 2px solid #ff5fa2;
+      color: #ff5fa2;
+      font-weight: 600;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .btn-outline-pink:hover {
+      background: #ff5fa2;
+      color: white;
+    }
+
+    footer {
+      background: #ff5fa2;
+      color: white;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+
+    .footer-text {
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    /* Social Media Section */
+    #social {
+      background: #fff0f6;
+      padding: 50px 0;
+      margin-top: 60px;
+      border-top: 3px dashed #ff5fa2;
+    }
+
+    .media_link {
+      border: 2px solid #ff5fa2;
+      border-radius: 12px;
+      padding: 12px 20px;
+      margin: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: 0.3s;
+      background: white;
+    }
+
+    .media_link:hover {
+      background: #ff5fa2;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .media_link i {
+      color: #ff5fa2;
+      transition: 0.3s;
+    }
+
+    .media_link:hover i {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Portfolio Section -->
+  <div id="portfolio" class="container mt-5 pt-5">
+    <h1 class="text-center mb-4 section-title">Our Specials</h1>
+    <p class="text-center section-subtitle">Handpicked dishes & treats from our café 🌷</p>
+
+    <div class="row justify-content-center mt-4">
+
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg portfolio-card">
+          <img src="image.png" class="card-img-top" alt="Strawberry Cake"/>
+          <div class="card-body text-center">
+            <h5 class="card-title">Strawberry Bliss Cake</h5>
+            <p class="card-text">A soft, creamy delight topped with fresh strawberries and love.</p>
+            <a href="#" class="btn btn-outline-pink">View Dish</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg portfolio-card">
+          <img src="img1.jpg" class="card-img-top" alt="Latte"/>
+          <div class="card-body text-center">
+            <h5 class="card-title">Caramel Latte</h5>
+            <p class="card-text">Smooth espresso with caramel drizzle.</p>
+            <a href="#" class="btn btn-outline-pink">View Drink</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg portfolio-card">
+          <img src="img2.jpg" class="card-img-top" alt="Macarons"/>
+          <div class="card-body text-center">
+            <h5 class="card-title">Pastel Macarons</h5>
+            <p class="card-text">Colorful French macarons with delicate flavors, light & dreamy.</p>
+            <a href="#" class="btn btn-outline-pink">View Dessert</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Social Media Section -->
+  <section id="social">
+    <div class="container text-center">
+      <h4 class="text-dark">Social Media</h4>
+      <h1 class="m-heading text-pink">Let’s Be Friends ✨</h1>
+
+      <div class="row pt-4">
+
+        <div class="col-md-3">
+          <a href="#" class="media_link">
+            <span>LinkedIn</span>
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a href="#" class="media_link">
+            <span>Github</span>
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a href="#" class="media_link">
+            <span>Youtube</span>
+            <i class="fab fa-youtube fa-2x"></i>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a href="#" class="media_link">
+            <span>Gmail</span>
+            <i class="fas fa-envelope fa-2x"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center mt-5 py-4">
+    <p class="footer-text">✨ Café ✨</p>
+    <p class="footer-subtext">Serving joy 🌷</p>
+  </footer>
+
+</body>
+</html>
