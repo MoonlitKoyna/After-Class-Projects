@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Bank App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #3a6ea5;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 1.5rem;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .balance {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .balance h2 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .inputs input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .inputs button {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #3a6ea5;
+      color: white;
+      cursor: pointer;
+    }
+
+    .inputs button:hover {
+      background: #2e5684;
+    }
+
+    .history {
+      margin-top: 20px;
+    }
+
+    .history h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      background: #f1f1f1;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 0.95rem;
+    }
+
+    .credit { color: green; }
+    .debit { color: red; }
+  </style>
+</head>
+<body>
+  <header>
+    My Bank App
+  </header>
+
+  <div class="container">
+    <div class="balance">
+      <h2 id="balance">Balance: ₹0</h2>
+    </div>
+
+    <div class="inputs">
+      <input type="number" id="credit" placeholder="Enter Credit (Income)">
+      <button onclick="addCredit()">Add Credit</button>
+      <input type="number" id="debit" placeholder="Enter Debit (Expense)">
+      <button onclick="addDebit()">Add Debit</button>
+    </div>
+
+    <div class="history">
+      <h3>Transaction History</h3>
+      <ul id="historyList">
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    let balance = 0;
+
+    function updateBalance() {
+      document.getElementById("balance").innerText = "Balance: ₹" + balance;
+    }
+
+    function addCredit() {
+      let credit = document.getElementById("credit").value;
+      if (credit) {
+        balance += parseInt(credit);
+        updateBalance();
+        let li = document.createElement("li");
+        li.classList.add("credit");
+        li.innerText = "+ ₹" + credit + " (Credit)";
+        document.getElementById("historyList").appendChild(li);
+        document.getElementById("credit").value = "";
+      }
+    }
+
+    function addDebit() {
+      let debit = document.getElementById("debit").value;
+      if (debit) {
+        balance -= parseInt(debit);
+        updateBalance();
+        let li = document.createElement("li");
+        li.classList.add("debit");
+        li.innerText = "- ₹" + debit + " (Debit)";
+        document.getElementById("historyList").appendChild(li);
+        document.getElementById("debit").value = "";
+      }
+    }
+  </script>
+</body>
+</html>
